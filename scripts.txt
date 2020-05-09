@@ -1,0 +1,9 @@
+docker build -t lib-mgmt .
+docker images
+docker run -it -d -p8080:8080 --name lib-mgmt-container lib-mgmt:latest
+docker logs container-id
+docker stop container-id
+docker ps -a
+docker rm container-id
+docker images
+docker rmi image-id image-id
